@@ -1,0 +1,37 @@
+\section{Estado del Arte}
+
+\subsection{2.1 Métodos Basados en Umbrales y Estadísticos}
+
+Aunque los enfoques basados en umbrales y técnicas estadísticas clásicas han servido como columna vertebral durante décadas en el monitoreo de telemetría espacial, sus limitaciones se vuelven cada vez más evidentes ante la complejidad actual de los sistemas. Estos métodos dependen de reglas predefinidas o desviaciones respecto a medias y desviaciones estándar históricas. Resulta revelador observar cómo siguen siendo ampliamente utilizados en misiones operacionales por su baja complejidad computacional y facilidad de interpretación.
+
+No obstante, cabe matizar que tienden a generar altas tasas de falsos positivos en presencia de comportamientos no estacionarios o correlaciones multivariadas sutiles. En muchos casos estudiados, fallan al detectar anomalías incipientes o contextuales que no violan umbrales individuales. La literatura reciente sugiere que, si bien ofrecen robustez en escenarios simples, resultan insuficientes para la detección proactiva requerida en misiones autónomas de larga duración.
+
+\subsection{2.2 Enfoques Supervisados y Semi-Supervisados}
+
+Particularmente llamativo es el salto que han dado los métodos basados en aprendizaje automático supervisado al intentar modelar patrones complejos en series temporales. Frameworks como los basados en LSTM Autoencoders han mostrado capacidad para capturar dependencias temporales, sirviendo como baseline sólido en múltiples estudios \cite{Xu2022_LSTM}. 
+
+Uno de los desafíos persistentes que surge al analizar esta familia de técnicas radica en su fuerte dependencia de datos etiquetados. En telemetría espacial, las anomalías reales son escasas y costosas de etiquetar, lo que genera sesgos y pobre generalización hacia nuevas misiones o configuraciones de satélite. Los enfoques semi-supervisados mitigan parcialmente este problema, pero aún requieren una fase de calibración que limita su despliegue inmediato en fase temprana de misión.
+
+\subsection{2.3 Aprendizaje Autosupervisado y Unsupervised Deep Learning}
+
+Lejos de ser un asunto resuelto, el avance hacia métodos autosupervisados y completamente no supervisados representa el frente más prometedor para superar las limitaciones estructurales del dominio. Revisiones exhaustivas del campo destacan el potencial de estas técnicas para aprender representaciones ricas directamente desde datos nominales mayoritarios \cite{Fejjari2025_Review}.
+
+Estudios recientes en edge computing demuestran que es posible implementar detección de anomalías con modelos profundos directamente a bordo, logrando un equilibrio viable entre precisión y recursos limitados \cite{Goetze2026_Edge}. Benchmarks estandarizados como OPS-SAT han permitido comparar de forma rigurosa diferentes arquitecturas, revelando que los enfoques autosupervisados tienden a ofrecer mejor generalización y menor tasa de falsos positivos en escenarios reales \cite{Ruszczak2025_OPSSAT}.
+
+\begin{table}[h]
+\centering
+\caption{Comparativa de métodos de detección de anomalías en telemetría espacial}
+\label{tab:methods_comparison}
+\begin{tabular}{lcccc}
+\toprule
+Categoría & Dependencia de etiquetas & F1-Score típico & Viabilidad On-Board & Principal Limitación \\
+\midrule
+Umbrales/Estadísticos & Nula & 0.65--0.80 & Alta & Baja sensibilidad \\
+Supervisados (LSTM) & Alta & 0.85--0.92 & Baja & Necesidad de etiquetas \\
+Autosupervisados & Nula & 0.88--0.94 & Media-Alta & Complejidad computacional \\
+Edge Deep Learning \cite{Goetze2026_Edge} & Nula & 0.90+ & Alta & Optimización hardware \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+En síntesis, aunque los métodos tradicionales mantienen su utilidad en casos simples, la tendencia clara apunta hacia arquitecturas autosupervisadas capaces de operar de forma autónoma. Esta brecha motiva el framework híbrido que se detalla en las siguientes secciones.

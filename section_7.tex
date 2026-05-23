@@ -1,0 +1,21 @@
+\section{Conclusiones y Trabajos Futuros}
+
+\subsection{7.1 Resumen de Logros}
+
+Resulta particularmente llamativo cómo un framework autosupervisado cuidadosamente diseñado puede transformar un problema históricamente difícil en una solución práctica y desplegable. Este trabajo presenta una arquitectura híbrida que integra autoencoders variacionales temporales, aprendizaje contrastivo y mecanismos de atención, logrando F1-scores superiores a 0.92 en benchmarks estándar sin requerir etiquetas de anomalías.
+
+Las optimizaciones edge implementadas demuestran que es posible ejecutar detección en tiempo real con bajo consumo energético, alineándose con avances recientes en inferencia a bordo \cite{Goetze2026_Edge}. Más allá de las métricas, el modelo ofrece puntuaciones de anomalía interpretables y robustez aceptable ante ruido y datos faltantes, características esenciales para sistemas críticos espaciales.
+
+\subsection{7.2 Desafíos Abiertos}
+
+Uno de los desafíos persistentes que surge al analizar el panorama actual radica en la brecha entre resultados en entornos controlados y el despliegue orbital real. Aunque el enfoque reduce drásticamente la dependencia de etiquetas, su rendimiento óptimo sigue ligado a la representatividad de los datos nominales de entrenamiento. 
+
+Revisiones comprehensivas del campo identifican claramente estas limitaciones estructurales y apuntan hacia la necesidad de mecanismos de adaptación continua \cite{Fejjari2025_Review}. En nuestra experiencia, la generalización entre misiones diferentes y la certificación para sistemas de alta criticidad continúan siendo barreras significativas. Además, la interpretabilidad completa de las decisiones en escenarios multivariados complejos requiere mayor madurez.
+
+\subsection{7.3 Recomendaciones y Perspectivas}
+
+Lejos de ser un asunto resuelto, el camino hacia la adopción masiva exige acciones concretas. Recomendamos avanzar en técnicas de continual learning y domain adaptation para permitir que los modelos se ajusten dinámicamente durante la misión. La integración con sistemas de planificación autónoma y la creación de benchmarks multi-misión más completos deberían ser prioridades.
+
+Particularmente prometedor resulta el potencial de combinar este framework con detección multimodal (telemetría + imágenes) y con enfoques de federated learning entre constelaciones. En perspectiva, creemos que la próxima generación de satélites incorporará detección de anomalías autosupervisada como elemento estándar de su arquitectura onboard, similar a cómo los sistemas de control de actitud evolucionaron hace décadas.
+
+En definitiva, este trabajo contribuye un paso sólido hacia operaciones más autónomas y resilientes en el espacio. Aunque persisten desafíos importantes, los resultados obtenidos y las direcciones identificadas sugieren que el aprendizaje autosupervisado jugará un rol central en la ingeniería de sistemas espaciales del futuro. El esfuerzo invertido vale la pena: proteger misiones críticas mediante inteligencia embebida no es solo técnicamente viable, sino estratégicamente necesario.

@@ -1,0 +1,47 @@
+\documentclass[10pt, journal, final, twocolumn, letterpaper]{IEEEtran}
+
+% --- PREÁMBULO DE PAQUETES ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb, amsfonts, amsthm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{color, xcolor}
+\usepackage{orcidlink} % Paquete específico para el icono y link de ORCID
+\usepackage[backend=biber, style=ieee, natbib=true]{biblatex}
+
+% --- CONFIGURACIÓN DE BIBLIOGRAFÍA ---
+\addbibresource{references.bib}
+
+% --- METADATOS DEL DOCUMENTO ---
+\title{Detección Automática de Anomalías Telemétricas en Sistemas Críticos Mediante Aprendizaje Autosupervisado y Modelos Profundos}
+
+\author{
+    \IEEEauthorblockN{Héctor A. Martínez
+    \orcidlink{0009-0000-8039-3585}},
+    \and
+    \IEEEauthorblockN{...} \\
+    Agencia Bolivariana para Actividades Espaciales\\
+    Email: \{ hmartinez, ... \}@abae.gob.ve
+}
+
+\begin{document}
+\maketitle
+
+\input{abstract.tex}
+
+\input{section_1.tex}
+\input{section_2.tex}
+\input{section_3.tex}
+\input{section_4.tex}
+\input{section_5.tex}
+\input{section_6.tex}
+\input{section_7.tex}
+
+% --- BIBLIOGRAFÍA ---
+%\nocite{*}
+\printbibliography
+\end{document}

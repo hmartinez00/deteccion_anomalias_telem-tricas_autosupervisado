@@ -1,0 +1,20 @@
+{
+    "fig1.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A con acentos negros, sin sombras, sin gradientes, sin texto incrustado. Paneles temporales multivariados: tres o cuatro líneas de series temporales (temperatura, voltaje, actitud, potencia) con regiones sombreadas en rojo claro indicando anomalías. Curvas de reconstrucción del modelo en gris y puntuación de anomalía inferior. Iconos minimalistas de satélite y sensores, flechas indicadoras, layout limpio estilo IEEE, orientación landscape."
+    },
+    "fig2.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A con acentos negros, sin sombras, sin gradientes, sin texto incrustado. Diagrama de arquitectura completa: Input Multivariate Time Series → Temporal Encoder (Conv1D + BiLSTM) → Variational Latent Space → Attention Module → Contrastive Branch (con augmentations) y Reconstruction Decoder. Flechas claras, bloques rectangulares etiquetados con placeholders, iconos minimalistas de satélite y series temporales, layout técnico limpio estilo IEEE, orientación landscape."
+    },
+    "fig3.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A con acentos negros, sin sombras, sin gradientes, sin texto incrustado. Pipeline horizontal completo: Raw Telemetry → Preprocessing (Normalization, Windowing) → Augmentations → Training (VAE + Contrastive Loss) → Optimized Model (Pruned + Quantized) → Edge Inference → Anomaly Score. Bloques rectangulares conectados por flechas gruesas, iconos minimalistas de satélite y CPU, layout limpio y técnico estilo IEEE, orientación landscape."
+    },
+    "fig4.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A con acentos negros, sin sombras, sin gradientes, sin texto incrustado. Paneles verticales o en grid mostrando series temporales multivariadas: Señal Original (múltiples canales) | Puntuación de Anomalía (línea roja con umbral) | Ground Truth (regiones marcadas). Ejemplos de anomalías sutiles y evidentes, flechas indicadoras, iconos minimalistas de satélite, layout técnico limpio estilo IEEE, orientación landscape."
+    },
+    "fig6.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A con acentos negros, sin sombras, sin gradientes, sin texto incrustado. Diagrama de trade-offs: triángulo o radar chart comparando Precision, Recall, Computational Cost, Robustness y Interpretability. Regiones sombreadas para Baseline vs Framework Propuesto. Iconos minimalistas de satélite, alerta y escudo, flechas de balance, layout limpio estilo IEEE, orientación landscape."
+    },
+    "fig7.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A con acentos negros, sin sombras, sin gradientes, sin texto incrustado. Diagrama conceptual de resumen: ciclo central con 'Framework Autosupervisado' conectado a Logros (F1>0.92, Edge Ready), Desafíos Abiertos y Perspectivas Futuras (Continual Learning, Multimodal, Constelaciones). Iconos minimalistas de satélite, red neuronal y flecha de tiempo, layout equilibrado y técnico estilo IEEE, orientación landscape."
+    }
+}

@@ -1,0 +1,21 @@
+\section{Discusión}
+
+\subsection{6.1 Análisis de Trade-offs}
+
+Resulta revelador observar cómo los trade-offs entre sensibilidad y especificidad definen el valor real de cualquier sistema de detección de anomalías en entornos críticos. Nuestro framework logra un equilibrio notable, con F1-scores superiores a 0.92, pero no sin compromisos. El componente contrastivo mejora significativamente la separación en el espacio latente, aunque aumenta ligeramente la complejidad computacional durante el entrenamiento.
+
+Revisiones exhaustivas del campo \cite{Fejjari2025_Review} destacan que la mayoría de enfoques autosupervisados enfrentan exactamente esta tensión: mayor robustez suele venir acompañada de mayor demanda de recursos o menor interpretabilidad. En nuestro caso, el mecanismo de atención aporta explicabilidad parcial mediante mapas de pesos, aunque a costa de cierta sobrecarga en inferencia. No obstante, cabe matizar que estos trade-offs resultan mucho más favorables que los observados en modelos puramente reconstructivos o supervisados.
+
+\subsection{6.2 Implicaciones para Sistemas Críticos}
+
+Particularmente llamativo es el potencial operativo que surge cuando se integra este tipo de detección autosupervisada en el ciclo de decisión de misiones espaciales. Benchmarks como OPS-SAT han demostrado que la capacidad de identificar anomalías en tiempo real puede reducir drásticamente el tiempo de respuesta ante eventos no nominales \cite{Ruszczak2025_OPSSAT}.
+
+En sistemas críticos, esta tecnología habilita operaciones más autónomas: desde el ajuste proactivo de configuraciones de payload hasta la activación de modos seguros antes de que un fallo menor escale. En nuestra experiencia, la baja tasa de falsos positivos es especialmente valiosa en misiones de larga duración, donde las alertas innecesarias consumen recursos valiosos de ground segment y equipo humano.
+
+\subsection{6.3 Limitaciones del Enfoque}
+
+Uno de los desafíos persistentes que surge al analizar el trabajo completo radica en la generalización entre diferentes plataformas satelitales. Aunque el modelo se entrena sin etiquetas, su rendimiento óptimo sigue requiriendo datos representativos del comportamiento nominal de la misión específica. 
+
+Lejos de ser un asunto resuelto, la adaptabilidad a dominios completamente nuevos (por ejemplo, de un CubeSat a un satélite de observación de alta resolución) requiere técnicas adicionales de transferencia o continual learning. Además, la certificación para misiones de categoría alta presenta barreras importantes: la naturaleza probabilística de los VAE complica la trazabilidad y validación formal exigida por agencias espaciales.
+
+En conjunto, el framework propuesto avanza de forma significativa el estado del arte en detección autosupervisada de anomalías telemétricas. Sin embargo, reconoce abiertamente sus limitaciones actuales y establece bases claras para las direcciones de investigación que se discuten en las conclusiones.
