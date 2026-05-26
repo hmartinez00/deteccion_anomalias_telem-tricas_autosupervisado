@@ -12,7 +12,7 @@ Uno de los desafíos persistentes que surge al entrenar modelos en datos telemé
 
 El entrenamiento combina la pérdida de reconstrucción del VAE con la pérdida contrastiva (InfoNCE) y una ligera regularización de clustering en el espacio latente. Esta combinación fuerza al modelo a aprender representaciones invariantes a perturbaciones menores pero sensibles a desviaciones anómalas reales. Particularmente llamativo es cómo el componente contrastivo mejora notablemente la separación entre regiones nominales y potencialmente anómalas en el espacio latente.
 
-\begin{table}[h]
+\begin{table*}[h]
 \centering
 \caption{Hiperparámetros principales del framework propuesto}
 \label{tab:hyperparameters}
@@ -29,7 +29,7 @@ $\lambda$ (Contrastive) & 0.5 \\
 Épocas & 150 \\
 \bottomrule
 \end{tabular}
-\end{table}
+\end{table*}
 
 \subsection{4.3 Optimizaciones para Inferencia Embebida}
 

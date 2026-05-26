@@ -18,7 +18,7 @@ Lejos de ser un asunto resuelto, el avance hacia métodos autosupervisados y com
 
 Estudios recientes en edge computing demuestran que es posible implementar detección de anomalías con modelos profundos directamente a bordo, logrando un equilibrio viable entre precisión y recursos limitados \cite{Goetze2026_Edge}. Benchmarks estandarizados como OPS-SAT han permitido comparar de forma rigurosa diferentes arquitecturas, revelando que los enfoques autosupervisados tienden a ofrecer mejor generalización y menor tasa de falsos positivos en escenarios reales \cite{Ruszczak2025_OPSSAT}.
 
-\begin{table}[h]
+\begin{table*}[h]
 \centering
 \caption{Comparativa de métodos de detección de anomalías en telemetría espacial}
 \label{tab:methods_comparison}
@@ -32,6 +32,6 @@ Autosupervisados & Nula & 0.88--0.94 & Media-Alta & Complejidad computacional \\
 Edge Deep Learning \cite{Goetze2026_Edge} & Nula & 0.90+ & Alta & Optimización hardware \\
 \bottomrule
 \end{tabular}
-\end{table}
+\end{table*}
 
 En síntesis, aunque los métodos tradicionales mantienen su utilidad en casos simples, la tendencia clara apunta hacia arquitecturas autosupervisadas capaces de operar de forma autónoma. Esta brecha motiva el framework híbrido que se detalla en las siguientes secciones.
