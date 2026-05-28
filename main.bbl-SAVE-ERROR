@@ -1,0 +1,235 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Goetze2026_Edge}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=496871f626dd02a806dc5628d267d4ed}{%
+           family={Goetze},
+           familyi={G\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d660ccbf4f423101135f3b60fe8a5107}{%
+           family={Schlippe},
+           familyi={S\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{a49f487132fa5da6358f49a72c6178e8}
+      \strng{fullhash}{a49f487132fa5da6358f49a72c6178e8}
+      \strng{fullhashraw}{a49f487132fa5da6358f49a72c6178e8}
+      \strng{bibnamehash}{a49f487132fa5da6358f49a72c6178e8}
+      \strng{authorbibnamehash}{a49f487132fa5da6358f49a72c6178e8}
+      \strng{authornamehash}{a49f487132fa5da6358f49a72c6178e8}
+      \strng{authorfullhash}{a49f487132fa5da6358f49a72c6178e8}
+      \strng{authorfullhashraw}{a49f487132fa5da6358f49a72c6178e8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint}
+      \field{note}{[Online]. Available: https://arxiv.org/pdf/2603.29375}
+      \field{title}{Deep Learning-Based Anomaly Detection in Spacecraft Telemetry on Edge Devices}
+      \field{year}{2026}
+      \verb{doi}
+      \verb 10.48550/arXiv.2603.29375
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2603.29375
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2603.29375
+      \endverb
+    \endentry
+    \entry{Fejjari2025_Review}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=6d9eec8e3c717ea29815b713efa72455}{%
+           family={Fejjari},
+           familyi={F\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{76ea5fbe860dc6a0d4a860adf56e9fd5}
+      \strng{fullhash}{76ea5fbe860dc6a0d4a860adf56e9fd5}
+      \strng{fullhashraw}{76ea5fbe860dc6a0d4a860adf56e9fd5}
+      \strng{bibnamehash}{76ea5fbe860dc6a0d4a860adf56e9fd5}
+      \strng{authorbibnamehash}{76ea5fbe860dc6a0d4a860adf56e9fd5}
+      \strng{authornamehash}{76ea5fbe860dc6a0d4a860adf56e9fd5}
+      \strng{authorfullhash}{76ea5fbe860dc6a0d4a860adf56e9fd5}
+      \strng{authorfullhashraw}{76ea5fbe860dc6a0d4a860adf56e9fd5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied Sciences}
+      \field{number}{10}
+      \field{title}{A Review of Anomaly Detection in Spacecraft Telemetry Data}
+      \field{volume}{15}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.3390/app15105653
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2076-3417/15/10/5653
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2076-3417/15/10/5653
+      \endverb
+    \endentry
+    \entry{Ruszczak2025_OPSSAT}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=71aa0ad0e03ce9e045e50936417ddcae}{%
+           family={Ruszczak},
+           familyi={R\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{781cf62aedb76b636e33f8f625ea5f24}
+      \strng{fullhash}{781cf62aedb76b636e33f8f625ea5f24}
+      \strng{fullhashraw}{781cf62aedb76b636e33f8f625ea5f24}
+      \strng{bibnamehash}{781cf62aedb76b636e33f8f625ea5f24}
+      \strng{authorbibnamehash}{781cf62aedb76b636e33f8f625ea5f24}
+      \strng{authornamehash}{781cf62aedb76b636e33f8f625ea5f24}
+      \strng{authorfullhash}{781cf62aedb76b636e33f8f625ea5f24}
+      \strng{authorfullhashraw}{781cf62aedb76b636e33f8f625ea5f24}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Scientific Data}
+      \field{title}{The OPS-SAT benchmark for detecting anomalies in satellite telemetry}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1038/s41597-025-05035-3
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41597-025-05035-3
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41597-025-05035-3
+      \endverb
+    \endentry
+    \entry{Xu2022_LSTM}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=ed2145713b6938078c6d2b8b51bac43f}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={ZP.},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{51ff4963cf29ad59536ff484f6bf1554}
+      \strng{fullhash}{51ff4963cf29ad59536ff484f6bf1554}
+      \strng{fullhashraw}{51ff4963cf29ad59536ff484f6bf1554}
+      \strng{bibnamehash}{51ff4963cf29ad59536ff484f6bf1554}
+      \strng{authorbibnamehash}{51ff4963cf29ad59536ff484f6bf1554}
+      \strng{authornamehash}{51ff4963cf29ad59536ff484f6bf1554}
+      \strng{authorfullhash}{51ff4963cf29ad59536ff484f6bf1554}
+      \strng{authorfullhashraw}{51ff4963cf29ad59536ff484f6bf1554}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Conference Proceedings}
+      \field{title}{An LSTM Autoencoder-Based Framework for Satellite Telemetry Anomaly Detection}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1109/XXXX.2022.10067443
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/10067443
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/10067443
+      \endverb
+    \endentry
+    \entry{Wang2025_Contrastive}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=cc4aadc875d7abdbaf96dfa4a83d8b77}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{3deddfd5334afe8de95e47549d6b5a86}
+      \strng{fullhash}{3deddfd5334afe8de95e47549d6b5a86}
+      \strng{fullhashraw}{3deddfd5334afe8de95e47549d6b5a86}
+      \strng{bibnamehash}{3deddfd5334afe8de95e47549d6b5a86}
+      \strng{authorbibnamehash}{3deddfd5334afe8de95e47549d6b5a86}
+      \strng{authornamehash}{3deddfd5334afe8de95e47549d6b5a86}
+      \strng{authorfullhash}{3deddfd5334afe8de95e47549d6b5a86}
+      \strng{authorfullhashraw}{3deddfd5334afe8de95e47549d6b5a86}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE}
+      \field{title}{Anomaly Detection of Telemetry Data Based on Time-Frequency Contrastive Learning}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/11365329
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/11365329
+      \endverb
+    \endentry
+    \entry{Djerida2025_FPMC}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=a074646ceba1ec65a92fe879240b5a1e}{%
+           family={Djerida},
+           familyi={D\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e832bcc831e2ec84da738841c4cc946d}
+      \strng{fullhash}{e832bcc831e2ec84da738841c4cc946d}
+      \strng{fullhashraw}{e832bcc831e2ec84da738841c4cc946d}
+      \strng{bibnamehash}{e832bcc831e2ec84da738841c4cc946d}
+      \strng{authorbibnamehash}{e832bcc831e2ec84da738841c4cc946d}
+      \strng{authornamehash}{e832bcc831e2ec84da738841c4cc946d}
+      \strng{authorfullhash}{e832bcc831e2ec84da738841c4cc946d}
+      \strng{authorfullhashraw}{e832bcc831e2ec84da738841c4cc946d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in Space Research}
+      \field{title}{Unsupervised anomaly detection for satellite telemetry data using frequent pattern mining and clustering approach (FPMC)}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0273117725013481
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0273117725013481
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

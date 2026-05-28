@@ -1,0 +1,36 @@
+\begin{tikzpicture}
+% === PARÁMETROS ===
+\definecolor{colorDatos}{HTML}{0047AB}
+\definecolor{colorBaseline}{HTML}{808080}
+\definecolor{colorGroundTruth}{HTML}{FF0000}
+
+\pgfplotsset{
+    estiloSerie/.style={width=6cm, height=3cm, axis lines*=left, grid=major, grid style={dashed, gray!30}, xticklabels={,,}},
+    estiloScore/.style={width=6cm, height=4cm, axis lines*=left, grid=major},
+    estiloRobustez/.style={width=6cm, height=4cm, axis lines*=left, grid=major}
+}
+
+% === ESTRUCTURA PRINCIPAL ===
+\begin{groupplot}[group style={group size=2 by 3, horizontal sep=2cm, vertical sep=1.5cm}]
+
+    % Panel 1: Series Temporales
+    \nextgroupplot[estiloSerie, ylabel={Temp (C)}]
+    \addplot[color=colorDatos, domain=0:100, samples=100] {sin(deg(x/5))};
+    
+    \nextgroupplot[estiloScore, title={Anomaly Score \& Ground Truth}]
+    \addplot[color=colorDatos, domain=0:100, samples=100] {0.5 + 0.2*sin(deg(x/5))};
+    % ANOTACIONES: Ground Truth
+    \fill[colorGroundTruth, opacity=0.2] (axis cs:20,0.3) rectangle (axis cs:40,0.7);
+
+    \nextgroupplot[estiloSerie, ylabel={Volt (V)}]
+    \addplot[color=colorDatos, domain=0:100, samples=100] {cos(deg(x/5))};
+
+    \nextgroupplot[estiloRobustez, title={Robustness to Noise}, ylabel={F1 Score}, xlabel={Noise \%}]
+    \addplot[color=colorDatos, mark=*, mark size=1pt] coordinates {(0,0.8) (100,0.3)};
+    \addplot[color=colorBaseline, dashed] coordinates {(0,0.75) (100,0.15)};
+
+    \nextgroupplot[estiloSerie, ylabel={Att (deg)}, xlabel={Time (s)}, xticklabels={0,20,40,60,80,100}]
+    \addplot[color=colorDatos, domain=0:100, samples=100] {sin(deg(x/10))};
+
+\end{groupplot}
+\end{tikzpicture}
